@@ -14,4 +14,4 @@ for i in range(0,10):
     blink(24)
 
 GPIO.cleanup()
-print
+print("program executed")
