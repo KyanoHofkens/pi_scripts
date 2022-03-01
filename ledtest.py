@@ -1,4 +1,3 @@
-from re import I
 import RPi.GPIO as GPIO
 import time
 
@@ -13,9 +12,8 @@ def blink(pin):
     time.sleep(0.5)
 
 
-while I != 0:
+for i in range(0,10):
     blink(24)
-    I + 1
 
 GPIO.cleanup()
 print("program executed")
