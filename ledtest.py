@@ -4,10 +4,10 @@ import time
 GPIO.setmode(GPIO.BCM)
 
 def blink(pin):
-    GPIO.setup(pin, GPIO.OUT)
-    GPIO.output(pin, 1)
+    GPIO.setup(24, GPIO.OUT)
+    GPIO.output(24, 1)
     time.sleep(0.5)
-    GPIO.output(pin, 0)
+    GPIO.output(24, 0)
     time.sleep(0.5)
 
 for i in range(0,10):
